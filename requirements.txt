@@ -1,5 +1,5 @@
-requests==2.30.0
+requests==2.32.2
 splunk-sdk==2.0.2
 types-requests==2.30.0.0
-urllib3==1.26.15
+urllib3==1.26.19
 khulnasoft==0.1.25

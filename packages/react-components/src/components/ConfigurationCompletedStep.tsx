@@ -22,16 +22,17 @@ const ConfigurationCompletedStep: FC<{
 
     useEffect(() => {
         if (configurationStep === ConfigurationStep.Completed) {
-            Promise.all([getKhulnasoftSearchDataUrl(), fetchTenantId(), fetchUserTenants(apiKey)]).then(
-                ([url, tenantId, userTenants]) => {
-                    setKhulnasoftSearchUrl(url);
-                    setTenantName(
-                        userTenants.find((tenant: Tenant) => tenant.id === tenantId)?.name ||
-                            'unknown'
-                    );
-                    setIsInitializingData(false);
-                }
-            );
+            Promise.all([
+                getKhulnasoftSearchDataUrl(),
+                fetchTenantId(),
+                fetchUserTenants(apiKey),
+            ]).then(([url, tenantId, userTenants]) => {
+                setKhulnasoftSearchUrl(url);
+                setTenantName(
+                    userTenants.find((tenant: Tenant) => tenant.id === tenantId)?.name || 'unknown'
+                );
+                setIsInitializingData(false);
+            });
         } else {
             setIsInitializingData(true);
             setKhulnasoftSearchUrl('');

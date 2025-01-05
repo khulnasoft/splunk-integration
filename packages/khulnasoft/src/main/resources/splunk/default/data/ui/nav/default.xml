@@ -1,0 +1,11 @@
+<nav search_view="search" color="#272735">
+  <view name="search" default="true" />
+  <view name="configuration" />
+  <view name="status" />
+  <a href="https://docs.khulnasoft.com/splunk-app-integration" target="_blank">Documentation</a>
+  <a href="https://app.khulnasoft.com/" target="_blank">Khulnasoft Platform</a>
+  <collection label="Saved Searches">
+    <saved name="Khulnasoft Search" />
+    <saved name="Severity" />
+  </collection>
+</nav>

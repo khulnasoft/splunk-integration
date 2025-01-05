@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="khulnasoft:/templates/status.html" type="html">
+	<label>Status</label>
+</view>

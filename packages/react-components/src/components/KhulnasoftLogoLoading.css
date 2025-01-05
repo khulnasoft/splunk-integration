@@ -1,0 +1,21 @@
+.khulnasoft-logo-loading-container {
+    position: relative;
+    top: 100%;
+    left: 50%;
+    margin-left: -2.5rem;
+}
+
+.khulnasoft-logo-loading-svg {
+    transform-origin: 50% 50%;
+    animation-name: rotate-khulnasoft-logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-duration: 0.8s;
+}
+
+/* Animations */
+@keyframes rotate-khulnasoft-logo {
+    100% {
+        transform: rotate(90deg);
+    }
+}
